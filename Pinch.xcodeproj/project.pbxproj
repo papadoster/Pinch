@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F881EBF29A004A800C79CBA /* PageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F881EBE29A004A800C79CBA /* PageModel.swift */; };
+		7F881EC129A0054800C79CBA /* PageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F881EC029A0054800C79CBA /* PageData.swift */; };
 		7FDBA916299ED2A60014AEB7 /* PinchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBA915299ED2A60014AEB7 /* PinchApp.swift */; };
 		7FDBA918299ED2A60014AEB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBA917299ED2A60014AEB7 /* ContentView.swift */; };
 		7FDBA91A299ED2AA0014AEB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBA919299ED2AA0014AEB7 /* Assets.xcassets */; };
 		7FDBA91D299ED2AA0014AEB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDBA91C299ED2AA0014AEB7 /* Preview Assets.xcassets */; };
+		7FDBA928299EED4F0014AEB7 /* InfoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBA927299EED4F0014AEB7 /* InfoPanelView.swift */; };
+		7FDBA92A299FD8C90014AEB7 /* ControllImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBA929299FD8C90014AEB7 /* ControllImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F881EBE29A004A800C79CBA /* PageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageModel.swift; sourceTree = "<group>"; };
+		7F881EC029A0054800C79CBA /* PageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageData.swift; sourceTree = "<group>"; };
 		7FDBA912299ED2A60014AEB7 /* Pinch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDBA915299ED2A60014AEB7 /* PinchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinchApp.swift; sourceTree = "<group>"; };
 		7FDBA917299ED2A60014AEB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FDBA919299ED2AA0014AEB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FDBA91C299ED2AA0014AEB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FDBA927299EED4F0014AEB7 /* InfoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPanelView.swift; sourceTree = "<group>"; };
+		7FDBA929299FD8C90014AEB7 /* ControllImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,8 @@
 		7FDBA924299ED3F00014AEB7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7FDBA927299EED4F0014AEB7 /* InfoPanelView.swift */,
+				7FDBA929299FD8C90014AEB7 /* ControllImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +98,7 @@
 		7FDBA925299ED4040014AEB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F881EBE29A004A800C79CBA /* PageModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		7FDBA926299ED40D0014AEB7 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				7F881EC029A0054800C79CBA /* PageData.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -170,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FDBA918299ED2A60014AEB7 /* ContentView.swift in Sources */,
+				7F881EBF29A004A800C79CBA /* PageModel.swift in Sources */,
+				7FDBA92A299FD8C90014AEB7 /* ControllImageView.swift in Sources */,
 				7FDBA916299ED2A60014AEB7 /* PinchApp.swift in Sources */,
+				7F881EC129A0054800C79CBA /* PageData.swift in Sources */,
+				7FDBA928299EED4F0014AEB7 /* InfoPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
